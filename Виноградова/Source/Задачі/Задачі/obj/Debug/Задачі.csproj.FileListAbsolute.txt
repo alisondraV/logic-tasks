@@ -1,0 +1,294 @@
+C:\Users\Алиса\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\Алиса\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\Алиса\Desktop\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Form1.resources
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\vynogradova\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Form1.resources
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\Алиса\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\ivanov\Desktop\Квал\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+E:\Квал\Задачі\Задачі\bin\Debug\Задачі.exe.config
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.exe
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.pdb
+E:\Квал\Задачі\Задачі\bin\Debug\Задачі.exe
+E:\Квал\Задачі\Задачі\bin\Debug\Задачі.pdb
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+E:\Квал\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+G:\Задачі\Задачі\bin\Debug\Задачі.exe.config
+G:\Задачі\Задачі\obj\Debug\Задачі.exe
+G:\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+F:\Задачі\Задачі\bin\Debug\Задачі.exe.config
+F:\Задачі\Задачі\obj\Debug\Задачі.exe
+F:\Задачі\Задачі\obj\Debug\Задачі.pdb
+F:\Задачі\Задачі\bin\Debug\Задачі.exe
+F:\Задачі\Задачі\bin\Debug\Задачі.pdb
+F:\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+F:\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\vynogradova\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\vynogradova\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\vynogradova\Desktop\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+E:\Задачі\Задачі\bin\Debug\Задачі.exe.config
+E:\Задачі\Задачі\obj\Debug\Задачі.exe
+E:\Задачі\Задачі\obj\Debug\Задачі.pdb
+E:\Задачі\Задачі\bin\Debug\Задачі.exe
+E:\Задачі\Задачі\bin\Debug\Задачі.pdb
+E:\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+E:\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\bazhyna\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\bazhyna\Desktop\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+C:\Users\bazhyna\Desktop\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\bazhyna\Desktop\Задачі\Задачі\bin\Debug\Задачі.pdb
+F:\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+F:\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+C:\Users\Алиса\Desktop\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+E:\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+C:\Users\vynogradova\Desktop\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+F:\kval\Задачі\Задачі\bin\Debug\Задачі.exe.config
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.exe
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.pdb
+F:\kval\Задачі\Задачі\bin\Debug\Задачі.exe
+F:\kval\Задачі\Задачі\bin\Debug\Задачі.pdb
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+E:\kval\Задачі\Задачі\bin\Debug\Задачі.exe.config
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.exe
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.pdb
+G:\kval\Задачі\Задачі\bin\Debug\Задачі.exe.config
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.exe
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.pdb
+G:\kval\Задачі\Задачі\bin\Debug\Задачі.exe
+G:\kval\Задачі\Задачі\bin\Debug\Задачі.pdb
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+G:\kval\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+C:\Users\Artem\Downloads\Telegram Desktop\Задачі\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\bin\Debug\Задачі.exe.config
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.exe
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.pdb
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\bin\Debug\Задачі.exe
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\bin\Debug\Задачі.pdb
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+C:\Users\galas\Downloads\Telegram Desktop\Задачі1\Задачі1\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+F:\Галасюк\kval\Задачі\Задачі\bin\Debug\Задачі.exe.config
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.exe
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.pdb
+F:\Галасюк\kval\Задачі\Задачі\bin\Debug\Задачі.exe
+F:\Галасюк\kval\Задачі\Задачі\bin\Debug\Задачі.pdb
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Titulka.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+F:\Галасюк\kval\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+F:\kval\Задачі\Задачі\obj\Debug\Задачі.Titulka.resources
+E:\kval\Задачі\Задачі\bin\Debug\Задачі.exe
+E:\kval\Задачі\Задачі\bin\Debug\Задачі.pdb
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Titulka.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+E:\kval\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+G:\Виноградова\Задачі\Задачі\bin\Debug\Задачі.exe.config
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.exe
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.pdb
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.csprojResolveAssemblyReference.cache
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Choose.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Items.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Last.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Main.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Numbers.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Ober_kartinku.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Perel.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Pereprava.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Properties.Resources.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Same.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Shulte.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Titulka.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Uvaga.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Vstav_slv.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.Words.resources
+G:\Виноградова\Задачі\Задачі\obj\Debug\Задачі.csproj.GenerateResource.Cache
+G:\Виноградова\Задачі\Задачі\bin\Debug\Задачі.exe
+G:\Виноградова\Задачі\Задачі\bin\Debug\Задачі.pdb
