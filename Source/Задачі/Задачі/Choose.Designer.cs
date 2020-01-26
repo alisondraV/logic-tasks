@@ -29,39 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Choose));
-            this.pbAttention = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.pbCrossing = new System.Windows.Forms.PictureBox();
             this.pbWords = new System.Windows.Forms.PictureBox();
             this.pbSсhulte = new System.Windows.Forms.PictureBox();
             this.pbNumbers = new System.Windows.Forms.PictureBox();
-            this.pbdvodu = new System.Windows.Forms.PictureBox();
+            this.pbSame = new System.Windows.Forms.PictureBox();
             this.pbItems = new System.Windows.Forms.PictureBox();
             this.pereliv = new System.Windows.Forms.PictureBox();
             this.pbTransfusion = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pbAttention)).BeginInit();
+            this.pbAttention = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbCrossing)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWords)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSсhulte)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNumbers)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbdvodu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSame)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItems)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pereliv)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTransfusion)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAttention)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pbAttention
-            // 
-            this.pbAttention.BackColor = System.Drawing.Color.Transparent;
-            this.pbAttention.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAttention.Image = ((System.Drawing.Image)(resources.GetObject("pbAttention.Image")));
-            this.pbAttention.Location = new System.Drawing.Point(145, 119);
-            this.pbAttention.Name = "pbAttention";
-            this.pbAttention.Size = new System.Drawing.Size(176, 112);
-            this.pbAttention.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbAttention.TabIndex = 0;
-            this.pbAttention.TabStop = false;
-            this.pbAttention.Click += new System.EventHandler(this.pbAttention_Click);
             // 
             // label1
             // 
@@ -77,8 +64,8 @@
             // 
             this.pbCrossing.BackColor = System.Drawing.Color.Transparent;
             this.pbCrossing.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbCrossing.Image = ((System.Drawing.Image)(resources.GetObject("pbCrossing.Image")));
-            this.pbCrossing.Location = new System.Drawing.Point(172, 309);
+            this.pbCrossing.Image = global::Задачі.Properties.Resources.crossing;
+            this.pbCrossing.Location = new System.Drawing.Point(70, 353);
             this.pbCrossing.Name = "pbCrossing";
             this.pbCrossing.Size = new System.Drawing.Size(176, 112);
             this.pbCrossing.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -90,8 +77,8 @@
             // 
             this.pbWords.BackColor = System.Drawing.Color.Transparent;
             this.pbWords.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbWords.Image = ((System.Drawing.Image)(resources.GetObject("pbWords.Image")));
-            this.pbWords.Location = new System.Drawing.Point(493, 446);
+            this.pbWords.Image = global::Задачі.Properties.Resources.words;
+            this.pbWords.Location = new System.Drawing.Point(398, 474);
             this.pbWords.Name = "pbWords";
             this.pbWords.Size = new System.Drawing.Size(176, 112);
             this.pbWords.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -103,8 +90,8 @@
             // 
             this.pbSсhulte.BackColor = System.Drawing.Color.Transparent;
             this.pbSсhulte.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbSсhulte.Image = ((System.Drawing.Image)(resources.GetObject("pbSсhulte.Image")));
-            this.pbSсhulte.Location = new System.Drawing.Point(784, 302);
+            this.pbSсhulte.Image = global::Задачі.Properties.Resources.schulte;
+            this.pbSсhulte.Location = new System.Drawing.Point(678, 413);
             this.pbSсhulte.Name = "pbSсhulte";
             this.pbSсhulte.Size = new System.Drawing.Size(176, 112);
             this.pbSсhulte.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -116,8 +103,8 @@
             // 
             this.pbNumbers.BackColor = System.Drawing.Color.Transparent;
             this.pbNumbers.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbNumbers.Image = ((System.Drawing.Image)(resources.GetObject("pbNumbers.Image")));
-            this.pbNumbers.Location = new System.Drawing.Point(493, 173);
+            this.pbNumbers.Image = global::Задачі.Properties.Resources.numbers;
+            this.pbNumbers.Location = new System.Drawing.Point(480, 188);
             this.pbNumbers.Name = "pbNumbers";
             this.pbNumbers.Size = new System.Drawing.Size(176, 112);
             this.pbNumbers.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -125,25 +112,25 @@
             this.pbNumbers.TabStop = false;
             this.pbNumbers.Click += new System.EventHandler(this.pbNumbers_Click);
             // 
-            // pbdvodu
+            // pbSame
             // 
-            this.pbdvodu.BackColor = System.Drawing.Color.Transparent;
-            this.pbdvodu.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbdvodu.Image = ((System.Drawing.Image)(resources.GetObject("pbdvodu.Image")));
-            this.pbdvodu.Location = new System.Drawing.Point(800, 102);
-            this.pbdvodu.Name = "pbdvodu";
-            this.pbdvodu.Size = new System.Drawing.Size(176, 112);
-            this.pbdvodu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbdvodu.TabIndex = 8;
-            this.pbdvodu.TabStop = false;
-            this.pbdvodu.Click += new System.EventHandler(this.pbdvodu_Click);
+            this.pbSame.BackColor = System.Drawing.Color.Transparent;
+            this.pbSame.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbSame.Image = global::Задачі.Properties.Resources.same;
+            this.pbSame.Location = new System.Drawing.Point(800, 102);
+            this.pbSame.Name = "pbSame";
+            this.pbSame.Size = new System.Drawing.Size(176, 112);
+            this.pbSame.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbSame.TabIndex = 8;
+            this.pbSame.TabStop = false;
+            this.pbSame.Click += new System.EventHandler(this.pbSame_Click);
             // 
             // pbItems
             // 
             this.pbItems.BackColor = System.Drawing.Color.Transparent;
             this.pbItems.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbItems.Image = ((System.Drawing.Image)(resources.GetObject("pbItems.Image")));
-            this.pbItems.Location = new System.Drawing.Point(1035, 217);
+            this.pbItems.Image = global::Задачі.Properties.Resources.items;
+            this.pbItems.Location = new System.Drawing.Point(956, 276);
             this.pbItems.Name = "pbItems";
             this.pbItems.Size = new System.Drawing.Size(176, 112);
             this.pbItems.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -167,8 +154,8 @@
             // 
             this.pbTransfusion.BackColor = System.Drawing.Color.Transparent;
             this.pbTransfusion.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbTransfusion.Image = ((System.Drawing.Image)(resources.GetObject("pbTransfusion.Image")));
-            this.pbTransfusion.Location = new System.Drawing.Point(238, 324);
+            this.pbTransfusion.Image = global::Задачі.Properties.Resources.transfusion;
+            this.pbTransfusion.Location = new System.Drawing.Point(136, 368);
             this.pbTransfusion.Name = "pbTransfusion";
             this.pbTransfusion.Size = new System.Drawing.Size(176, 112);
             this.pbTransfusion.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -176,22 +163,35 @@
             this.pbTransfusion.TabStop = false;
             this.pbTransfusion.Click += new System.EventHandler(this.pbTransfusion_Click);
             // 
+            // pbAttention
+            // 
+            this.pbAttention.BackColor = System.Drawing.Color.Transparent;
+            this.pbAttention.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAttention.Image = global::Задачі.Properties.Resources.attention;
+            this.pbAttention.Location = new System.Drawing.Point(172, 137);
+            this.pbAttention.Name = "pbAttention";
+            this.pbAttention.Size = new System.Drawing.Size(176, 112);
+            this.pbAttention.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAttention.TabIndex = 13;
+            this.pbAttention.TabStop = false;
+            this.pbAttention.Click += new System.EventHandler(this.pbAttention_Click);
+            // 
             // Choose
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1228, 644);
+            this.Controls.Add(this.pbAttention);
             this.Controls.Add(this.pbTransfusion);
             this.Controls.Add(this.pereliv);
             this.Controls.Add(this.pbItems);
-            this.Controls.Add(this.pbdvodu);
+            this.Controls.Add(this.pbSame);
             this.Controls.Add(this.pbNumbers);
             this.Controls.Add(this.pbSсhulte);
             this.Controls.Add(this.pbWords);
             this.Controls.Add(this.pbCrossing);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pbAttention);
             this.Font = new System.Drawing.Font("Times New Roman", 16F);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -199,31 +199,30 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Choose_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pbAttention)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbCrossing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbWords)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSсhulte)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbNumbers)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbdvodu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSame)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbItems)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pereliv)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbTransfusion)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAttention)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pbAttention;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pbCrossing;
         private System.Windows.Forms.PictureBox pbWords;
         private System.Windows.Forms.PictureBox pbSсhulte;
         private System.Windows.Forms.PictureBox pbNumbers;
-        private System.Windows.Forms.PictureBox pbdvodu;
+        private System.Windows.Forms.PictureBox pbSame;
         private System.Windows.Forms.PictureBox pbItems;
         private System.Windows.Forms.PictureBox pereliv;
         private System.Windows.Forms.PictureBox pbTransfusion;
+        private System.Windows.Forms.PictureBox pbAttention;
     }
 }

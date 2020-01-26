@@ -18,162 +18,168 @@ namespace Задачі
             InitializeComponent();
         }
 
-        int t = 180, k = 0;
-        int tm, ts;
+        int time = 180;
+        int points = 0;
+        int minutes;
+        int seconds;
+        int secondsLeave = 0;
+
         Point Location = new Point();
         Point WolfLoc, SheepLoc, CabbageLoc;
         List<PictureBox> pictListLeft = new List<PictureBox>();
         List<PictureBox> pictListRight = new List<PictureBox>();
-        List<PictureBox> pictListLodka = new List<PictureBox>();
+        List<PictureBox> pictListShuttle = new List<PictureBox>();
         bool MovePic = true;
         int ClickCount;
 
-        string path = Application.StartupPath + "\\Result.txt";
+        string resultPath = Application.StartupPath + "\\Result.txt";
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (t > 0)
+            if (time > 0)
             {
-                t--;
-                tm = t / 60;
-                ts = t % 60;
-                if (ts >= 10)
-                    txttime.Text = tm.ToString() + ":" + ts.ToString();
+                time--;
+                minutes = time / 60;
+                seconds = time % 60;
+                if (seconds >= 10)
+                    txttime.Text = minutes.ToString() + ":" + seconds.ToString();
                 else
-                    txttime.Text = tm.ToString() + ":0" + ts.ToString();
+                    txttime.Text = minutes.ToString() + ":0" + seconds.ToString();
             }
             else
             {
-                txttime.Text = "Stop";timer2.Start(); string appendText = "Оберіть картинку - " + k.ToString() + Environment.NewLine;
-                File.AppendAllText(path, appendText, Encoding.UTF8);
+                txttime.Text = "Stop";
+                Stop();
             }
 
-            if(pictListLeft.Contains(Wolk)&& pictListLeft.Contains(Koza)&& pictListLeft.Contains(Kapusta))
+            if(pictListLeft.Contains(pbWolf)&& pictListLeft.Contains(pbGoat)&& pictListLeft.Contains(pbCabbage))
             {
-                k = 40 - ClickCount;
+                points = 40 - ClickCount;
                 timer1.Stop();
-                MessageBox.Show(ClickCount.ToString()+" натискань", "Перемога!");
-                Koza.Enabled = false;
-                Kapusta.Enabled = false;
-                Wolk.Enabled = false;
+                MessageBox.Show(ClickCount.ToString() +" clicks", "Victory!");
+                pbGoat.Enabled = false;
+                pbCabbage.Enabled = false;
+                pbWolf.Enabled = false;
                 timer2.Start();
             }
         }
       
         private void Form1_Load(object sender, EventArgs e)
         {
-            WolfLoc = Wolk.Location;
-            SheepLoc = Koza.Location;
-            CabbageLoc = Kapusta.Location;
-            pictureBox7.SendToBack();
-            pictureBox8.SendToBack();
-            pictListRight.Add(Kapusta);
-            pictListRight.Add(Koza);
-            pictListRight.Add(Wolk);
+            WolfLoc = pbWolf.Location;
+            SheepLoc = pbGoat.Location;
+            CabbageLoc = pbCabbage.Location;
+            pbShuttle.SendToBack();
+            pbPlaceOne.SendToBack();
+            pictListRight.Add(pbCabbage);
+            pictListRight.Add(pbGoat);
+            pictListRight.Add(pbWolf);
         }
 
-        private void Wolk_Click(object sender, EventArgs e)
+        private void pbWolf_Click(object sender, EventArgs e)
         {
-            if ((pictListLeft.Contains(Koza) && pictListLeft.Contains(Kapusta))
-                ||( pictListRight.Contains(Koza) && pictListRight.Contains(Kapusta)))
+            if ((pictListLeft.Contains(pbGoat) && pictListLeft.Contains(pbCabbage))
+                ||( pictListRight.Contains(pbGoat) && pictListRight.Contains(pbCabbage)))
             {
-                MessageBox.Show("Обережно! Коза з'їдає капусту!");
+                MessageBox.Show("Be careful! Goat is gonna eat the cabbage!");
             }
             else
             {
-                Peremeschenie(Wolk, pictureBox8, WolfLoc);
+                Moving(pbWolf, pbPlaceOne, WolfLoc);
                 ClickCount += 1;
             }
         }
 
-      
-        private void Koza_Click(object sender, EventArgs e)
+        private void pbGoat_Click(object sender, EventArgs e)
         {
-            Peremeschenie(Koza, pictureBox3, SheepLoc);
+            Moving(pbGoat, pbPlaceThree, SheepLoc);
             ClickCount += 1;
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
-            button3.Visible = true;
-            button4.Visible = false;
+            btnFinish.Visible = true;
+            btnStart.Visible = false;
             timer1.Start();
-            Wolk.Enabled = true;
-            Kapusta.Enabled = true;
-            Koza.Enabled = true;
+            pbWolf.Enabled = true;
+            pbCabbage.Enabled = true;
+            pbGoat.Enabled = true;
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnFinish_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            Main.points += k;
-            string appendText = "Переправа - " + k.ToString() + Environment.NewLine;
-            File.AppendAllText(path, appendText, Encoding.UTF8);
-            timer2.Start();
+            Stop();
         }
-
-        int ksec = 0;
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ksec++;
-            if (ksec == 3)
+            secondsLeave++;
+            if (secondsLeave == 3)
             {
-                Choose ff = new Choose();
-                ff.Show();
+                Choose choose = new Choose();
+                choose.Show();
                 this.Close();
             }
         }
 
-        private void Kapusta_Click(object sender, EventArgs e)
+        private void pbCabbage_Click(object sender, EventArgs e)
         {
-            if ((pictListLeft.Contains(Wolk) && pictListLeft.Contains(Koza))||
-                (pictListRight.Contains(Wolk) && pictListRight.Contains(Koza)))
+            if ((pictListLeft.Contains(pbWolf) && pictListLeft.Contains(pbGoat))||
+                (pictListRight.Contains(pbWolf) && pictListRight.Contains(pbGoat)))
             {
-                MessageBox.Show("Обережно! Вовк з'їдає козу!");
+                MessageBox.Show("Be careful! Wolf's gonna eat the goat!");
             }
             else
             {
-                Peremeschenie(Kapusta, pictureBox2, CabbageLoc);
+                Moving(pbCabbage, pbPlaceTwo, CabbageLoc);
                 ClickCount += 1;
             }
         }
-
-       
-        void Peremeschenie(PictureBox Picture, PictureBox PictureMove, Point Loc)
+               
+        void Moving(PictureBox Picture, PictureBox PictureMove, Point Loc)
         {
          
-            if (Picture.Location == Loc && pictListLodka.Count == 0)
+            if (Picture.Location == Loc && pictListShuttle.Count == 0)
             {
-                Location = pictureBox7.Location;
+                Location = pbShuttle.Location;
                 Picture.Location = Location;
                 MovePic = false;
-                pictListLodka.Add(Picture);
+                pictListShuttle.Add(Picture);
                 pictListRight.Remove(Picture);
 
             }
-            else if (Picture.Location == pictureBox7.Location && !MovePic)
+            else if (Picture.Location == pbShuttle.Location && !MovePic)
             {
                 Location = PictureMove.Location;
                 Picture.Location = Location;
                 pictListLeft.Add(Picture);
-                pictListLodka.Remove(Picture);
+                pictListShuttle.Remove(Picture);
             }
-            else if (Picture.Location == pictureBox7.Location && MovePic)
+            else if (Picture.Location == pbShuttle.Location && MovePic)
             {
                 Location = Loc;
                 Picture.Location = Location;
-                pictListLodka.Remove(Picture);
+                pictListShuttle.Remove(Picture);
                 pictListRight.Add(Picture);
             }
-            else if (Picture.Location == PictureMove.Location && pictListLodka.Count==0)
+            else if (Picture.Location == PictureMove.Location && pictListShuttle.Count==0)
             {
-                Location = pictureBox7.Location;
+                Location = pbShuttle.Location;
                 Picture.Location = Location;
                 pictListLeft.Remove(Picture);
-                pictListLodka.Add(Picture);
+                pictListShuttle.Add(Picture);
                 MovePic = true;
             }
-        } 
+        }
+
+        void Stop()
+        {
+            timer1.Stop();
+
+            string appendText = $"Crossing - {points.ToString()}\n";
+            File.AppendAllText(resultPath, appendText, Encoding.UTF8);
+            Main.points += points;
+            timer2.Start();
+        }
     }
 }

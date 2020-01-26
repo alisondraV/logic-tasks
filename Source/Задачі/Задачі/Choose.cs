@@ -17,21 +17,23 @@ namespace Задачі
             InitializeComponent();
         }
 
-        public int attention;
-        public int numbers;
-        public int items;
-        public int transfusion;
-        public int crossing;
-        public int same;
-        public int words;
-        public int sсhulte;
+        public static bool attention = true;
+        public static bool numbers = true;
+        public static bool items = true;
+        public static bool transfusion = true;
+        public static bool crossing = true;
+        public static bool same = true;
+        public static bool words = true;
+        public static bool sсhulte = true;
+        private int gamesCount;
 
         private void pbAttention_Click(object sender, EventArgs e)
         {
             Attention attentionForm = new Attention();
             attentionForm.Show();
             this.Hide();
-            attention++;
+            attention = false;
+            gamesCount++;
         }
 
         private void pbNumbers_Click(object sender, EventArgs e)
@@ -39,15 +41,17 @@ namespace Задачі
             Numbers numbersForm = new Numbers();
             numbersForm.Show();
             this.Hide();
-            numbers++;
+            numbers = false;
+            gamesCount++;
         }
 
-        private void pbdvodu_Click(object sender, EventArgs e)
+        private void pbSame_Click(object sender, EventArgs e)
         {
             Same sameForm = new Same();
             sameForm.Show();
             this.Hide();
-            same++;
+            same = false;
+            gamesCount++;
         }
 
         private void pbItems_Click(object sender, EventArgs e)
@@ -55,7 +59,8 @@ namespace Задачі
             Items itemsForm = new Items();
             itemsForm.Show();
             this.Hide();
-            items++;
+            items = false;
+            gamesCount++;
         }
 
         private void pbSсhulte_Click(object sender, EventArgs e)
@@ -63,7 +68,8 @@ namespace Задачі
             Schulte sсhulteForm = new Schulte();
             sсhulteForm.Show();
             this.Hide();
-            sсhulte++;
+            sсhulte = false;
+            gamesCount++;
         }
 
         private void pbWords_Click(object sender, EventArgs e)
@@ -71,7 +77,8 @@ namespace Задачі
             Words frm = new Words();
             frm.Show();
             this.Hide();
-            words++;
+            words = false;
+            gamesCount++;
         }
 
         private void pbCrossing_Click(object sender, EventArgs e)
@@ -79,7 +86,8 @@ namespace Задачі
             Crossing frm = new Crossing();
             frm.Show();
             this.Hide();
-            crossing++;
+            crossing = false;
+            gamesCount++;
         }
 
         private void pbTransfusion_Click(object sender, EventArgs e)
@@ -87,7 +95,8 @@ namespace Задачі
             Transfusion frm = new Transfusion();
             frm.Show();
             this.Hide();
-            transfusion++;
+            transfusion = false;
+            gamesCount++;
         }
 
         private void Choose_Load(object sender, EventArgs e)
@@ -96,25 +105,17 @@ namespace Задачі
                 pbCrossing.Visible = false;
             else if (Main.level == 1)
                 pbTransfusion.Visible = false;
+            
+            pbItems.Visible = items;
+            pbNumbers.Visible = numbers;
+            pbTransfusion.Visible = transfusion;
+            pbCrossing.Visible = crossing;
+            pbSame.Visible = same;
+            pbSсhulte.Visible = sсhulte;
+            pbAttention.Visible = attention;
+            pbWords.Visible = words;
 
-            if (items == 1)
-                pbItems.Visible = false;
-            if (numbers == 1)
-                pbNumbers.Visible = false;
-            if (transfusion == 1)
-                pbTransfusion.Visible = false;
-            if (crossing == 1)
-                pbCrossing.Visible = false;
-            if (same == 1)
-                pbdvodu.Visible = false;
-            if (sсhulte == 1)
-                pbSсhulte.Visible = false;
-            if (attention == 1)
-                pbAttention.Visible = false;
-            if (words == 1)
-                pbWords.Visible = false;
-
-            if (items + numbers + transfusion + crossing + same + sсhulte + attention + words == 8)
+            if (gamesCount == 8)
             {
                 Last last = new Last();
                 last.Show();

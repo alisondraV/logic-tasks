@@ -30,7 +30,7 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Numbers));
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbl1 = new System.Windows.Forms.Label();
@@ -63,7 +63,7 @@
             this.lbl8 = new System.Windows.Forms.Label();
             this.lbl7 = new System.Windows.Forms.Label();
             this.lbl6 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblres = new System.Windows.Forms.Label();
@@ -72,17 +72,17 @@
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.BackColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(1056, 116);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 41);
-            this.button1.TabIndex = 21;
-            this.button1.Text = "Почати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStart.BackColor = System.Drawing.Color.Snow;
+            this.btnStart.Location = new System.Drawing.Point(1056, 116);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(162, 41);
+            this.btnStart.TabIndex = 21;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // label1
             // 
@@ -91,8 +91,8 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1002, 63);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Представлено декілька числових рядів. Треба знайти закономірності побудови кожног" +
-    "о ряду і вписати відсутні числа.";
+            this.label1.Text = "Several numerical series are presented. It is necessary to unravel the principle " +
+    "by which each sequence is composed and enter the missing numbers.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
@@ -340,27 +340,27 @@
             this.lbl6.Text = "12   13   11   14   10   15";
             this.lbl6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnFinish
             // 
-            this.button2.BackColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(1056, 171);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 41);
-            this.button2.TabIndex = 54;
-            this.button2.Text = "Закінчити";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnFinish.BackColor = System.Drawing.Color.Snow;
+            this.btnFinish.Location = new System.Drawing.Point(1056, 171);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(162, 41);
+            this.btnFinish.TabIndex = 54;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(898, 564);
+            this.label2.Location = new System.Drawing.Point(935, 564);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 25);
+            this.label2.Size = new System.Drawing.Size(164, 25);
             this.label2.TabIndex = 55;
-            this.label2.Text = "Залишилось часу:";
+            this.label2.Text = "Time left:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel1
@@ -436,9 +436,9 @@
             this.Controls.Add(this.lblres);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 16F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -446,7 +446,7 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Numbers";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Числові ряди";
+            this.Text = "Numbers";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -456,7 +456,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbl1;
@@ -489,7 +489,7 @@
         private System.Windows.Forms.Label lbl8;
         private System.Windows.Forms.Label lbl7;
         private System.Windows.Forms.Label lbl6;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFinish;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblres;

@@ -31,11 +31,11 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Attention));
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtbWords = new System.Windows.Forms.RichTextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.txttime = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
@@ -45,21 +45,23 @@
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(23, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(1237, 125);
+            this.label1.Size = new System.Drawing.Size(1201, 125);
             this.label1.TabIndex = 5;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = "You have to find 10 nouns, each with length of six letters, and highlight them. I" +
+    "f the word is highlighted correctly, it becomes underlined.\r\nWord can start on o" +
+    "ne line and end on another.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // richTextBox1
+            // rtbWords
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.richTextBox1.Location = new System.Drawing.Point(52, 300);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(1184, 349);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = "";
-            this.richTextBox1.SelectionChanged += new System.EventHandler(this.richTextBox1_SelectionChanged);
+            this.rtbWords.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.rtbWords.Location = new System.Drawing.Point(41, 300);
+            this.rtbWords.Name = "rtbWords";
+            this.rtbWords.ReadOnly = true;
+            this.rtbWords.Size = new System.Drawing.Size(1150, 300);
+            this.rtbWords.TabIndex = 6;
+            this.rtbWords.Text = "";
+            this.rtbWords.SelectionChanged += new System.EventHandler(this.rbtWords_SelectionChanged);
             // 
             // timer1
             // 
@@ -77,34 +79,34 @@
             this.txttime.TabIndex = 18;
             this.txttime.Text = "3:00";
             // 
-            // button3
+            // btnFinish
             // 
-            this.button3.BackColor = System.Drawing.Color.Snow;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(565, 209);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 41);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Закінчити";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFinish.BackColor = System.Drawing.Color.Snow;
+            this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFinish.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnFinish.Location = new System.Drawing.Point(565, 209);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(162, 41);
+            this.btnFinish.TabIndex = 63;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
-            // button4
+            // btnStart
             // 
-            this.button4.BackColor = System.Drawing.Color.Snow;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(565, 158);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 41);
-            this.button4.TabIndex = 62;
-            this.button4.Text = "Почати";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnStart.BackColor = System.Drawing.Color.Snow;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStart.Location = new System.Drawing.Point(565, 158);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(162, 41);
+            this.btnStart.TabIndex = 62;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // timer2
             // 
@@ -117,10 +119,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1228, 644);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.txttime);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtbWords);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Calibri", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -128,7 +130,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Attention";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Увага";
+            this.Text = "Attention";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,11 +138,11 @@
 
         #endregion
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtbWords;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label txttime;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Timer timer2;
     }
 }

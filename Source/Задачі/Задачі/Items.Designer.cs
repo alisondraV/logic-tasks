@@ -31,16 +31,16 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Items));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.pbCurtain = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer2 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.lblres = new System.Windows.Forms.Label();
-            this.lbltime = new System.Windows.Forms.Label();
+            this.lblTime = new System.Windows.Forms.Label();
             this.timer3 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurtain)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -51,32 +51,32 @@
             this.label1.Location = new System.Drawing.Point(163, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(967, 36);
+            this.label1.Size = new System.Drawing.Size(791, 36);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Знайди предмети зі списку на малюнку, який скривається за ширмою.";
+            this.label1.Text = "Find the objects from the list on the picture behind the screen.";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.BackColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(1008, 84);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 41);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Почати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStart.BackColor = System.Drawing.Color.Snow;
+            this.btnStart.Location = new System.Drawing.Point(1008, 84);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(162, 41);
+            this.btnStart.TabIndex = 2;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // pictureBox1
+            // pbCurtain
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(132, 52);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(735, 601);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 12;
-            this.pictureBox1.TabStop = false;
+            this.pbCurtain.Image = ((System.Drawing.Image)(resources.GetObject("pbCurtain.Image")));
+            this.pbCurtain.Location = new System.Drawing.Point(132, 52);
+            this.pbCurtain.Name = "pbCurtain";
+            this.pbCurtain.Size = new System.Drawing.Size(735, 601);
+            this.pbCurtain.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCurtain.TabIndex = 12;
+            this.pbCurtain.TabStop = false;
             // 
             // timer1
             // 
@@ -91,26 +91,25 @@
             // label2
             // 
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(963, 528);
+            this.label2.Location = new System.Drawing.Point(996, 528);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(196, 25);
+            this.label2.Size = new System.Drawing.Size(167, 41);
             this.label2.TabIndex = 56;
-            this.label2.Text = "Залишилось часу:";
+            this.label2.Text = "Time left:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
-            // button2
+            // btnFinish
             // 
-            this.button2.BackColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(1008, 135);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 41);
-            this.button2.TabIndex = 57;
-            this.button2.Text = "Закінчити";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnFinish.BackColor = System.Drawing.Color.Snow;
+            this.btnFinish.Location = new System.Drawing.Point(1008, 135);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(162, 41);
+            this.btnFinish.TabIndex = 57;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // lblres
             // 
@@ -121,16 +120,15 @@
             this.lblres.TabIndex = 58;
             this.lblres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lbltime
+            // lblTime
             // 
-            this.lbltime.AutoSize = true;
-            this.lbltime.BackColor = System.Drawing.Color.Transparent;
-            this.lbltime.Location = new System.Drawing.Point(1146, 529);
-            this.lbltime.Name = "lbltime";
-            this.lbltime.Size = new System.Drawing.Size(72, 36);
-            this.lbltime.TabIndex = 67;
-            this.lbltime.Text = "4:00";
-            this.lbltime.Click += new System.EventHandler(this.lbltime_Click);
+            this.lblTime.AutoSize = true;
+            this.lblTime.BackColor = System.Drawing.Color.Transparent;
+            this.lblTime.Location = new System.Drawing.Point(1146, 529);
+            this.lblTime.Name = "lblTime";
+            this.lblTime.Size = new System.Drawing.Size(72, 36);
+            this.lblTime.TabIndex = 67;
+            this.lblTime.Text = "4:00";
             // 
             // timer3
             // 
@@ -145,12 +143,12 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1228, 644);
-            this.Controls.Add(this.lbltime);
+            this.Controls.Add(this.lblTime);
             this.Controls.Add(this.lblres);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.pbCurtain);
+            this.Controls.Add(this.btnStart);
             this.Controls.Add(this.label1);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 16F);
@@ -159,9 +157,9 @@
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "Items";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Знайди предмети";
+            this.Text = "Find Items";
             this.Load += new System.EventHandler(this.Items_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCurtain)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,14 +168,14 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.PictureBox pbCurtain;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Timer timer2;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFinish;
         private System.Windows.Forms.Label lblres;
-        private System.Windows.Forms.Label lbltime;
+        private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer3;
     }
 }

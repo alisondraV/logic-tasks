@@ -22,8 +22,8 @@ namespace Задачі
         {
             string[] rez = File.ReadAllLines("Result.txt");
             int [] sum = new int[10];
-            name.Text = rez[0];
-            klas.Text = rez[1];
+            lblName.Text = rez[0];
+            lblLevel.Text = rez[1];
             //foreach (string st in rez)
             //    rezz.Text = st;
             for (int i = 2; i < rez.Length; i++)
@@ -38,7 +38,7 @@ namespace Задачі
                 label.Location = new System.Drawing.Point(400, 190 + 40 * i);
                 this.Controls.Add(label);
             }
-            bal.Text = Main.points.ToString();
+            lblPoints.Text = Main.points.ToString();
         }
 
         private void Last_FormClosing(object sender, FormClosingEventArgs e)

@@ -18,7 +18,7 @@ namespace Задачі
             InitializeComponent();
         }
 
-        int n = 0;
+        int index = 0;
         public static int level = 0;
         public static int points = 0;
 
@@ -30,8 +30,8 @@ namespace Задачі
             {
                 StreamWriter sw = File.CreateText("Result.txt");
                 sw.WriteLine(txtLastName.Text + " " + txtFirstName.Text);
-                n = cbLevel.SelectedIndex;
-                if (n == 0)
+                index = cbLevel.SelectedIndex;
+                if (index == 0)
                 {
                     sw.WriteLine("1st level");
                     level = 1;
@@ -42,8 +42,8 @@ namespace Задачі
                     level = 2;
                 }
 
-                Choose frm = new Choose();
-                frm.Show();
+                Choose choose = new Choose();
+                choose.Show();
                 this.Hide();
                 sw.Close();
             }

@@ -31,10 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Schulte));
             this.lblres = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnFinish = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnStart = new System.Windows.Forms.Button();
+            this.pnlNumbers = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.lbltime = new System.Windows.Forms.Label();
@@ -50,18 +50,18 @@
             this.lblres.TabIndex = 63;
             this.lblres.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button2
+            // btnFinish
             // 
-            this.button2.BackColor = System.Drawing.Color.Snow;
-            this.button2.Location = new System.Drawing.Point(913, 193);
-            this.button2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(162, 41);
-            this.button2.TabIndex = 62;
-            this.button2.Text = "Закінчити";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Visible = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.btnFinish.BackColor = System.Drawing.Color.Snow;
+            this.btnFinish.Location = new System.Drawing.Point(913, 193);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(162, 41);
+            this.btnFinish.TabIndex = 62;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
             // label2
             // 
@@ -70,30 +70,30 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(196, 25);
             this.label2.TabIndex = 61;
-            this.label2.Text = "Витрачено часу:";
+            this.label2.Text = "Time spent:";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button1
+            // btnStart
             // 
-            this.button1.BackColor = System.Drawing.Color.Snow;
-            this.button1.Location = new System.Drawing.Point(913, 142);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(162, 41);
-            this.button1.TabIndex = 59;
-            this.button1.Text = "Почати";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnStart.BackColor = System.Drawing.Color.Snow;
+            this.btnStart.Location = new System.Drawing.Point(913, 142);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(162, 41);
+            this.btnStart.TabIndex = 59;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
-            // panel1
+            // pnlNumbers
             // 
-            this.panel1.BackColor = System.Drawing.Color.PowderBlue;
-            this.panel1.Font = new System.Drawing.Font("Times New Roman", 24F);
-            this.panel1.Location = new System.Drawing.Point(73, 30);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(600, 600);
-            this.panel1.TabIndex = 64;
-            this.panel1.Visible = false;
+            this.pnlNumbers.BackColor = System.Drawing.Color.PowderBlue;
+            this.pnlNumbers.Font = new System.Drawing.Font("Times New Roman", 24F);
+            this.pnlNumbers.Location = new System.Drawing.Point(73, 32);
+            this.pnlNumbers.Name = "pnlNumbers";
+            this.pnlNumbers.Size = new System.Drawing.Size(600, 600);
+            this.pnlNumbers.TabIndex = 64;
+            this.pnlNumbers.Visible = false;
             // 
             // label3
             // 
@@ -104,7 +104,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(391, 97);
             this.label3.TabIndex = 65;
-            this.label3.Text = "Вказати хаотично представлені у таблиці числа у порядку їх зростання.";
+            this.label3.Text = "Indicate randomly represented numbers in the table in ascending order.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // timer1
@@ -127,7 +127,7 @@
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // Shulte
+            // Schulte
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -135,18 +135,18 @@
             this.ClientSize = new System.Drawing.Size(1228, 644);
             this.Controls.Add(this.lbltime);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlNumbers);
             this.Controls.Add(this.lblres);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnFinish);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnStart);
             this.Font = new System.Drawing.Font("Times New Roman", 16F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Shulte";
+            this.Name = "Schulte";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Таблиця Шульте";
+            this.Text = "Schulte";
             this.Load += new System.EventHandler(this.Shulte_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -156,10 +156,10 @@
         #endregion
 
         private System.Windows.Forms.Label lblres;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnFinish;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnStart;
+        private System.Windows.Forms.Panel pnlNumbers;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbltime;

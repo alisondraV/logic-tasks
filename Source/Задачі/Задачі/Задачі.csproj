@@ -142,6 +142,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Same.resx">
       <DependentUpon>Same.cs</DependentUpon>
@@ -167,6 +168,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\attention.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\crossing.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\items.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\numbers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\same.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\schulte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transfusion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\words.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

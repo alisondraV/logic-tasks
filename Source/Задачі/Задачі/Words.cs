@@ -20,7 +20,6 @@ namespace Задачі
 
         int time = 180;
         int points = 0;
-        int resultTime = 0;
         int minutes = 0;
         int seconds = 0;
         int repetition = 0;
@@ -41,7 +40,7 @@ namespace Задачі
 
         Label[] initialList = new Label[7];
         Label[] modifiedList = new Label[8];
-        string[] wordList = new string[20];
+        string[] wordList;
 
         void Stop()
         {
@@ -52,7 +51,7 @@ namespace Задачі
             }
             else
             {
-                lblres.Text = $"You scored {points.ToString()} points";
+                lblres.Text = $"You scored {points.ToString()} point(s)";
             }
 
             string appendText = $"Words - {points.ToString()}\n";
@@ -90,19 +89,11 @@ namespace Задачі
         {
             if (Main.level == 1)
             {
-                string[] lines = File.ReadAllLines(wordsPath + "1.txt", Encoding.UTF8);
-                for (int i = 0; i < 20; i++)
-                {
-                    wordList[i] = lines[i];
-                }
+                wordList = File.ReadAllLines(wordsPath + "1.txt");
             }
             if (Main.level == 2)
             {
-                string[] lines = File.ReadAllLines(wordsPath + "2.txt", Encoding.UTF8);
-                for (int i = 0; i < 20; i++)
-                {
-                    wordList[i] = lines[i];
-                }
+                wordList = File.ReadAllLines(wordsPath + "2.txt");
             }
         }
 
@@ -167,7 +158,6 @@ namespace Задачі
 
         private void btnFinish_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
             Stop();
         }
 

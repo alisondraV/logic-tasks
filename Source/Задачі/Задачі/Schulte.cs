@@ -18,57 +18,66 @@ namespace Задачі
             InitializeComponent();
         }
 
-        int n = 5, l = 0, tres = 0, tm = 0, ts = 0, p = 0, t = 0, ind1 = 0, ind2 = 0, click = 0, nom1 = 0, nom2 = 0, k = 0;
-        int[] q = new int[49];
+        int top = 5;
+        int left = 0;
+        int minutes = 0;
+        int seconds = 0;
+        int endSeconds = 0;
+
+        int lblCount = 0;
+        int time = 0;
+        int prevIndex = 0;
+        int nextIndex = 0;
+        int click = 0;
+        int prevNumber = 0;
+        int nextNumber = 0;
+        int points = 0;
+        int[] swapped = new int[49];
         Label[] labels = new Label[49];
+        
+        string resultPath = Application.StartupPath + "\\Result.txt";
+        public int numbers = 0;
+        public int size = 0;
+        const int OFFSET = 85;
 
         private void Shulte_Load(object sender, EventArgs e)
         {
-            if (Main.level == 7)
+            if (Main.level == 1)
             {
-                r1 = 36;
-                r2 = 6;
-                panel1.Width -= 85;
-                panel1.Height -= 85;
+                size = 6;
+                pnlNumbers.Width -= 85;
+                pnlNumbers.Height -= 85;
             }
-            else if (Main.level == 8)
+            else if (Main.level == 2)
             {
-                r1 = 49;
-                r2 = 7;
+                size = 7;
             }
+            numbers = size * size;
         }
-
-        string path = Application.StartupPath + "\\Result.txt";
-        public int r1 = 0, r2 = 0;
 
         void Stop()
         {
-            panel1.Visible = false;
-            if (k % 10 == 1 || k == 1)
-                lblres.Text = "За цю задачу ви набрали " + k.ToString() + " бал";
+            pnlNumbers.Visible = false;
+            timer1.Stop();
+            if (points == 0)
+            {
+                lblres.Text = "You haven't scored anything in this task";
+            }
             else
             {
-                if ((k % 10 == 2 || k % 10 == 3 || k % 10 == 4 || k == 2 || k == 3 || k == 4) && k != 11 && k != 12 && k != 13 && k != 14)
-                    lblres.Text = "За цю задачу ви набрали " + k.ToString() + " бали";
-                else
-                {
-                    if (k == 0)
-                        lblres.Text = "За цю задачу ви не набрали жодного балу";
-                    else
-                        lblres.Text = "За цю задачу ви набрали " + ((k + 1) / 2).ToString() + " балів";
-                }
+                lblres.Text = $"You scored {points.ToString()} point(s)";
             }
-            lblres.Text = "За це завдання ви отримали " + ((k + 1) / 2).ToString() + " балів";
-            timer1.Stop();
+
+            string appendText = $"Schulte - {points.ToString()}\n";
+            File.AppendAllText(resultPath, appendText, Encoding.UTF8);
+            Main.points += points;
             timer2.Start();
-            Main.points += ((k + 1) / 2);
-            string appendText = "Таблиця Шульте - " + ((k + 1)/2).ToString() + Environment.NewLine;
-            File.AppendAllText(path, appendText, Encoding.UTF8);
+            Main.points += ((points + 1) / 2);
         }
 
         void LblCreate()
         {
-            for (int i = 0; i < r1; i++)
+            for (int i = 0; i < numbers; i++)
             {
                 labels[i] = new Label();
                 labels[i].AutoSize = false;
@@ -80,20 +89,20 @@ namespace Задачі
                 labels[i].Click += new System.EventHandler(this.labClick);
             }
 
-            for (int i = 0; i < r2; i++)
+            for (int i = 0; i < size; i++)
             {
-                l = 5;
-                for (int j = 0; j < r2; j++)
+                left = 5;
+                for (int j = 0; j < size; j++)
                 {
-                    labels[p].Top = n;
-                    labels[p].Left = l;
-                    l += 85;
-                    p++;
+                    labels[lblCount].Top = top;
+                    labels[lblCount].Left = left;
+                    left += OFFSET;
+                    lblCount++;
                 }
-                n += 85;
+                top += OFFSET;
             }
 
-            this.panel1.Controls.AddRange(this.labels);
+            this.pnlNumbers.Controls.AddRange(this.labels);
         }
 
         void labClick(object sender, EventArgs e)
@@ -102,33 +111,33 @@ namespace Задачі
             click++;
             if (click == 1)
             {
-                nom1 = Convert.ToInt32(labels[index].Tag);
-                ind1 = index;
-                if (nom1 == 1)
+                prevNumber = Convert.ToInt32(labels[index].Tag);
+                prevIndex = index;
+                if (prevNumber == 1)
                 {
                     labels[index].BackColor = Color.PeachPuff;
-                    k++;
+                    points++;
                 }
                 else
                     click = 0;
             }
             else
             {
-                nom2 = Convert.ToInt32(labels[index].Tag);
-                ind2 = index;
+                nextNumber = Convert.ToInt32(labels[index].Tag);
+                nextIndex = index;
 
-                if (nom2 == nom1 + 1)
+                if (nextNumber == prevNumber + 1)
                 {
                     labels[index].BackColor = Color.PeachPuff;
-                    ind1 = ind2;
-                    ind2 = 0;
-                    nom1 = nom2;
-                    k++;
+                    prevIndex = nextIndex;
+                    nextIndex = 0;
+                    prevNumber = nextNumber;
+                    points++;
                 }
                 else
-                    k--;
+                    points--;
             }
-            if (nom2 == r1)
+            if (nextNumber == numbers)
                 Stop();
         }
 
@@ -137,68 +146,65 @@ namespace Задачі
             int x, y;
             Random rand = new Random();
 
-            for (int i = 1; i <= r1; i++)
+            for (int i = 1; i <= numbers; i++)
             {
-                q[i - 1] = i;
+                swapped[i - 1] = i;
             }
 
-            for (int i = 0; i < r1; i++)
+            for (int i = 0; i < numbers; i++)
             {
-                x = i + rand.Next(r1 - i);
-                y = q[x];
-                q[x] = q[i];
-                q[i] = y;
+                x = i + rand.Next(numbers - i);
+                y = swapped[x];
+                swapped[x] = swapped[i];
+                swapped[i] = y;
             }
         }
 
         void Fill()
         {
-            Random rnd = new Random();
-            for (int i = 0; i < r1; i++)
+            Random rand = new Random();
+            for (int i = 0; i < numbers; i++)
             {
-                labels[i].Tag = q[i];
-                labels[i].Text = q[i].ToString();
-                labels[i].ForeColor = Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
+                labels[i].Tag = swapped[i];
+                labels[i].Text = swapped[i].ToString();
+                labels[i].ForeColor = Color.FromArgb(rand.Next(0, 256), rand.Next(0, 256), rand.Next(0, 256));
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
             LblCreate();
             Choose();
             Fill();
-            button2.Visible = true;
+            btnFinish.Visible = true;
             timer1.Start();
-            button1.Visible = false;
-            panel1.Visible = true;
+            btnStart.Visible = false;
+            pnlNumbers.Visible = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            t++;
-            tm = t / 60;
-            ts = t % 60;
-            if (ts >= 10)
-                lbltime.Text = tm.ToString() + ":" + ts.ToString();
+            time++;
+            minutes = time / 60;
+            seconds = time % 60;
+            if (seconds >= 10)
+                lbltime.Text = minutes.ToString() + ":" + seconds.ToString();
             else
-                lbltime.Text = tm.ToString() + ":0" + ts.ToString();
+                lbltime.Text = minutes.ToString() + ":0" + seconds.ToString();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btnFinish_Click(object sender, EventArgs e)
         {
-            tres = t;
             Stop();
         }
 
-        int ksec = 0;
-
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ksec++;
-            if (ksec == 3)
+            endSeconds++;
+            if (endSeconds == 3)
             {
-                Choose ff = new Choose();
-                ff.Show();
+                Choose choose = new Choose();
+                choose.Show();
                 this.Close();
             }
         }

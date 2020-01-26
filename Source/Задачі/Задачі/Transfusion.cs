@@ -23,15 +23,21 @@ namespace Задачі
 
 
         int t = 180;
-        int tm, ts;
+        int minutes;
+        int seconds;
+        int secondsLeave;
         int p1h, p1w, p2h, p2w, p3h, p3w;
-        int k = 0;
+        int points = 0;
+        int selected = 0;
         int v1 = 8, v2 = 3, v3 = 5;
         int v01 = 8, v02 = 0, v03 = 0;
         
+        SolidBrush brush = new SolidBrush(Color.Aqua);
+        Graphics gr, gr1, gr2;
 
+        string resultPath = Application.StartupPath + "\\Result.txt";
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pbThreeL_Click(object sender, EventArgs e)
         {
             if (selected == 0)
             {
@@ -62,7 +68,7 @@ namespace Задачі
             if (v01 == 4||v03 == 4)
             {
                 timer1.Stop();
-                MessageBox.Show("Вітаю!");
+                MessageBox.Show("Congratulations!");
                 Main.points += 10;
             }
                 
@@ -79,7 +85,7 @@ namespace Задачі
 
         }
 
-        private void pc5litr_Click(object sender, EventArgs e)
+        private void pbFiveL_Click(object sender, EventArgs e)
         {
             if (selected == 0)
             {
@@ -111,7 +117,7 @@ namespace Задачі
                 MessageBox.Show("Вітаю!");
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void pbEightL_Click(object sender, EventArgs e)
         {
             if (selected == 0)
             {
@@ -140,56 +146,44 @@ namespace Задачі
 
             draw_box();
             if (v03 == 4 || v01 == 4)
-                MessageBox.Show("Вітаю!");
+                MessageBox.Show("Congratulations!");
 
         }
-        int selected=0;   
-        private void button3_Click(object sender, EventArgs e)
+         
+        private void btnFinish_Click(object sender, EventArgs e)
         {
-            timer1.Stop();
-            timer2.Start();
-            Main.points += k;
-
-            string appendText = "Переливання - " + k.ToString() + Environment.NewLine;
-            File.AppendAllText(path, appendText, Encoding.UTF8);
+            Stop();
         }
-
-        int ksec;
 
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ksec++;
-            if (ksec == 3)
+            secondsLeave++;
+            if (secondsLeave == 3)
             {
-                Choose ff = new Choose();
-                ff.Show();
+                Choose choose = new Choose();
+                choose.Show();
                 this.Close();
             }
         }
 
-        SolidBrush brush = new SolidBrush(Color.Aqua);
-        Graphics gr, gr1, gr2;
-
-      
-
-        private void button4_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
-            Start.Visible = false;
-            pc3litr.Enabled = true;
-            pc5litr.Enabled = true;
-            pc8litr.Enabled = true;
+            btnStart.Visible = false;
+            pbThreeL.Enabled = true;
+            pbFiveL.Enabled = true;
+            pbEightL.Enabled = true;
             timer1.Start();
-            Finish.Visible = true;
-            gr = pc8litr.CreateGraphics();
-            gr1 = pc3litr.CreateGraphics();
-            gr2 = pc5litr.CreateGraphics();
+            btnFinish.Visible = true;
+            gr = pbEightL.CreateGraphics();
+            gr1 = pbThreeL.CreateGraphics();
+            gr2 = pbFiveL.CreateGraphics();
         
-            p1h = pc8litr.Height;
-            p2h = pc3litr.Height;
-            p3h = pc5litr.Height;
-            p1w = pc8litr.Width;
-            p2w = pc3litr.Width;
-            p3w = pc5litr.Width;
+            p1h = pbEightL.Height;
+            p2h = pbThreeL.Height;
+            p3h = pbFiveL.Height;
+            p1w = pbEightL.Width;
+            p2w = pbThreeL.Width;
+            p3w = pbFiveL.Width;
 
             v01 = v1;
             v02 = 0;
@@ -197,26 +191,33 @@ namespace Задачі
             selected = 0;
             draw_box();
         }
-
-        string path = Application.StartupPath + "\\Result.txt";
-
+        
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (t > 0)
             {
                 t--;
-                tm = t / 60;
-                ts = t % 60;
-                if (ts >= 10)
-                    txttime.Text = tm.ToString() + ":" + ts.ToString();
+                minutes = t / 60;
+                seconds = t % 60;
+                if (seconds >= 10)
+                    lblTime.Text = minutes.ToString() + ":" + seconds.ToString();
                 else
-                    txttime.Text = tm.ToString() + ":0" + ts.ToString();
+                    lblTime.Text = minutes.ToString() + ":0" + seconds.ToString();
             }
-            else { txttime.Text = "Stop"; timer2.Start(); string appendText = "Оберіть картинку - " + k.ToString() + Environment.NewLine;
-                File.AppendAllText(path, appendText, Encoding.UTF8);
+            else {
+                lblTime.Text = "Stop";
+                Stop();
             }
         }
 
-    }
-    }
+        void Stop()
+        {
+            timer1.Stop();
 
+            string appendText = $"Transfusion - {points.ToString()}\n";
+            File.AppendAllText(resultPath, appendText, Encoding.UTF8);
+            Main.points += points;
+            timer2.Start();
+        }
+    }
+}

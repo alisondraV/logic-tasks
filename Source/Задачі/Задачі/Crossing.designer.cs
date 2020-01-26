@@ -32,28 +32,28 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Crossing));
             this.label1 = new System.Windows.Forms.Label();
             this.txttime = new System.Windows.Forms.TextBox();
-            this.Koza = new System.Windows.Forms.PictureBox();
-            this.Wolk = new System.Windows.Forms.PictureBox();
-            this.Kapusta = new System.Windows.Forms.PictureBox();
+            this.pbGoat = new System.Windows.Forms.PictureBox();
+            this.pbWolf = new System.Windows.Forms.PictureBox();
+            this.pbCabbage = new System.Windows.Forms.PictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.pbPlaceTwo = new System.Windows.Forms.PictureBox();
+            this.pbPlaceThree = new System.Windows.Forms.PictureBox();
+            this.pbPlaceOne = new System.Windows.Forms.PictureBox();
+            this.pbShuttle = new System.Windows.Forms.PictureBox();
+            this.btnFinish = new System.Windows.Forms.Button();
+            this.btnStart = new System.Windows.Forms.Button();
             this.timer2 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Koza)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Wolk)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kapusta)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGoat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWolf)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCabbage)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceTwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceThree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceOne)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShuttle)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -65,7 +65,9 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(785, 96);
             this.label1.TabIndex = 0;
-            this.label1.Text = resources.GetString("label1.Text");
+            this.label1.Text = "The farmer bought a goat, a cabbage and a wolf on the fair. On his way home he ha" +
+    "d to cross the river. The peasant had a small shuttle, in which only one of his " +
+    "purchases could be accommodated.\r\n";
             this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // txttime
@@ -77,52 +79,52 @@
             this.txttime.TabIndex = 1;
             this.txttime.Text = "3:00";
             // 
-            // Koza
+            // pbGoat
             // 
-            this.Koza.BackColor = System.Drawing.Color.Transparent;
-            this.Koza.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Koza.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Koza.Enabled = false;
-            this.Koza.Image = ((System.Drawing.Image)(resources.GetObject("Koza.Image")));
-            this.Koza.Location = new System.Drawing.Point(968, 228);
-            this.Koza.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Koza.Name = "Koza";
-            this.Koza.Size = new System.Drawing.Size(142, 130);
-            this.Koza.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Koza.TabIndex = 6;
-            this.Koza.TabStop = false;
-            this.Koza.Click += new System.EventHandler(this.Koza_Click);
+            this.pbGoat.BackColor = System.Drawing.Color.Transparent;
+            this.pbGoat.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbGoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbGoat.Enabled = false;
+            this.pbGoat.Image = ((System.Drawing.Image)(resources.GetObject("pbGoat.Image")));
+            this.pbGoat.Location = new System.Drawing.Point(968, 228);
+            this.pbGoat.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pbGoat.Name = "pbGoat";
+            this.pbGoat.Size = new System.Drawing.Size(142, 130);
+            this.pbGoat.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbGoat.TabIndex = 6;
+            this.pbGoat.TabStop = false;
+            this.pbGoat.Click += new System.EventHandler(this.pbGoat_Click);
             // 
-            // Wolk
+            // pbWolf
             // 
-            this.Wolk.BackColor = System.Drawing.Color.Transparent;
-            this.Wolk.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Wolk.Enabled = false;
-            this.Wolk.Image = ((System.Drawing.Image)(resources.GetObject("Wolk.Image")));
-            this.Wolk.Location = new System.Drawing.Point(1055, 84);
-            this.Wolk.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Wolk.Name = "Wolk";
-            this.Wolk.Size = new System.Drawing.Size(142, 130);
-            this.Wolk.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Wolk.TabIndex = 7;
-            this.Wolk.TabStop = false;
-            this.Wolk.Click += new System.EventHandler(this.Wolk_Click);
+            this.pbWolf.BackColor = System.Drawing.Color.Transparent;
+            this.pbWolf.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbWolf.Enabled = false;
+            this.pbWolf.Image = ((System.Drawing.Image)(resources.GetObject("pbWolf.Image")));
+            this.pbWolf.Location = new System.Drawing.Point(818, 122);
+            this.pbWolf.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pbWolf.Name = "pbWolf";
+            this.pbWolf.Size = new System.Drawing.Size(142, 130);
+            this.pbWolf.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbWolf.TabIndex = 7;
+            this.pbWolf.TabStop = false;
+            this.pbWolf.Click += new System.EventHandler(this.pbWolf_Click);
             // 
-            // Kapusta
+            // pbCabbage
             // 
-            this.Kapusta.BackColor = System.Drawing.Color.Transparent;
-            this.Kapusta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.Kapusta.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.Kapusta.Enabled = false;
-            this.Kapusta.Image = ((System.Drawing.Image)(resources.GetObject("Kapusta.Image")));
-            this.Kapusta.Location = new System.Drawing.Point(1118, 277);
-            this.Kapusta.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Kapusta.Name = "Kapusta";
-            this.Kapusta.Size = new System.Drawing.Size(142, 130);
-            this.Kapusta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Kapusta.TabIndex = 8;
-            this.Kapusta.TabStop = false;
-            this.Kapusta.Click += new System.EventHandler(this.Kapusta_Click);
+            this.pbCabbage.BackColor = System.Drawing.Color.Transparent;
+            this.pbCabbage.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.pbCabbage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbCabbage.Enabled = false;
+            this.pbCabbage.Image = ((System.Drawing.Image)(resources.GetObject("pbCabbage.Image")));
+            this.pbCabbage.Location = new System.Drawing.Point(1073, 101);
+            this.pbCabbage.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.pbCabbage.Name = "pbCabbage";
+            this.pbCabbage.Size = new System.Drawing.Size(142, 130);
+            this.pbCabbage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbCabbage.TabIndex = 8;
+            this.pbCabbage.TabStop = false;
+            this.pbCabbage.Click += new System.EventHandler(this.pbCabbage_Click);
             // 
             // timer1
             // 
@@ -160,8 +162,8 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(465, 63);
             this.label4.TabIndex = 11;
-            this.label4.Text = "Як йому переправити усі придбання через річку, якщо коза не може залишатися наоди" +
-    "нці з капустою, \r\n";
+            this.label4.Text = "How can he get all the acquisitions across the river if the goat can\'t stay alone" +
+    " with the cabbage,";
             this.label4.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // label5
@@ -169,84 +171,84 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(468, 109);
+            this.label5.Location = new System.Drawing.Point(439, 110);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(322, 31);
+            this.label5.Size = new System.Drawing.Size(402, 31);
             this.label5.TabIndex = 12;
-            this.label5.Text = "а вовк – наодинці з козою?";
+            this.label5.Text = " and the wolf - alone with the goat?";
             // 
-            // pictureBox2
+            // pbPlaceTwo
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Location = new System.Drawing.Point(200, 162);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(142, 130);
-            this.pictureBox2.TabIndex = 14;
-            this.pictureBox2.TabStop = false;
+            this.pbPlaceTwo.BackColor = System.Drawing.Color.Transparent;
+            this.pbPlaceTwo.Location = new System.Drawing.Point(200, 162);
+            this.pbPlaceTwo.Name = "pbPlaceTwo";
+            this.pbPlaceTwo.Size = new System.Drawing.Size(142, 130);
+            this.pbPlaceTwo.TabIndex = 14;
+            this.pbPlaceTwo.TabStop = false;
             // 
-            // pictureBox3
+            // pbPlaceThree
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(74, 311);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(142, 130);
-            this.pictureBox3.TabIndex = 15;
-            this.pictureBox3.TabStop = false;
+            this.pbPlaceThree.BackColor = System.Drawing.Color.Transparent;
+            this.pbPlaceThree.Location = new System.Drawing.Point(74, 311);
+            this.pbPlaceThree.Name = "pbPlaceThree";
+            this.pbPlaceThree.Size = new System.Drawing.Size(142, 130);
+            this.pbPlaceThree.TabIndex = 15;
+            this.pbPlaceThree.TabStop = false;
             // 
-            // pictureBox8
+            // pbPlaceOne
             // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.Location = new System.Drawing.Point(33, 162);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(142, 130);
-            this.pictureBox8.TabIndex = 17;
-            this.pictureBox8.TabStop = false;
+            this.pbPlaceOne.BackColor = System.Drawing.Color.Transparent;
+            this.pbPlaceOne.Location = new System.Drawing.Point(33, 162);
+            this.pbPlaceOne.Name = "pbPlaceOne";
+            this.pbPlaceOne.Size = new System.Drawing.Size(142, 130);
+            this.pbPlaceOne.TabIndex = 17;
+            this.pbPlaceOne.TabStop = false;
             // 
-            // pictureBox7
+            // pbShuttle
             // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Location = new System.Drawing.Point(693, 267);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(142, 130);
-            this.pictureBox7.TabIndex = 18;
-            this.pictureBox7.TabStop = false;
+            this.pbShuttle.BackColor = System.Drawing.Color.Transparent;
+            this.pbShuttle.Location = new System.Drawing.Point(693, 267);
+            this.pbShuttle.Name = "pbShuttle";
+            this.pbShuttle.Size = new System.Drawing.Size(142, 130);
+            this.pbShuttle.TabIndex = 18;
+            this.pbShuttle.TabStop = false;
             // 
-            // button3
+            // btnFinish
             // 
-            this.button3.BackColor = System.Drawing.Color.Snow;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(23, 75);
-            this.button3.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(162, 41);
-            this.button3.TabIndex = 63;
-            this.button3.Text = "Закінчити";
-            this.button3.UseVisualStyleBackColor = false;
-            this.button3.Visible = false;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.btnFinish.BackColor = System.Drawing.Color.Snow;
+            this.btnFinish.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFinish.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnFinish.Location = new System.Drawing.Point(23, 75);
+            this.btnFinish.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnFinish.Name = "btnFinish";
+            this.btnFinish.Size = new System.Drawing.Size(162, 41);
+            this.btnFinish.TabIndex = 63;
+            this.btnFinish.Text = "Finish";
+            this.btnFinish.UseVisualStyleBackColor = false;
+            this.btnFinish.Visible = false;
+            this.btnFinish.Click += new System.EventHandler(this.btnFinish_Click);
             // 
-            // button4
+            // btnStart
             // 
-            this.button4.BackColor = System.Drawing.Color.Snow;
-            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(23, 24);
-            this.button4.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(162, 41);
-            this.button4.TabIndex = 62;
-            this.button4.Text = "Почати";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.btnStart.BackColor = System.Drawing.Color.Snow;
+            this.btnStart.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStart.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStart.Location = new System.Drawing.Point(23, 24);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnStart.Name = "btnStart";
+            this.btnStart.Size = new System.Drawing.Size(162, 41);
+            this.btnStart.TabIndex = 62;
+            this.btnStart.Text = "Start";
+            this.btnStart.UseVisualStyleBackColor = false;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // timer2
             // 
             this.timer2.Interval = 1000;
             this.timer2.Tick += new System.EventHandler(this.timer2_Tick);
             // 
-            // Pereprava
+            // Crossing
             // 
             this.AllowDrop = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 36F);
@@ -254,38 +256,38 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1228, 644);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.Koza);
-            this.Controls.Add(this.Wolk);
-            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.btnFinish);
+            this.Controls.Add(this.btnStart);
+            this.Controls.Add(this.pbShuttle);
+            this.Controls.Add(this.pbPlaceOne);
+            this.Controls.Add(this.pbGoat);
+            this.Controls.Add(this.pbWolf);
+            this.Controls.Add(this.pbPlaceThree);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.Kapusta);
+            this.Controls.Add(this.pbCabbage);
             this.Controls.Add(this.txttime);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pbPlaceTwo);
             this.DoubleBuffered = true;
             this.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.MaximizeBox = false;
-            this.Name = "Pereprava";
+            this.Name = "Crossing";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Переправа";
+            this.Text = "Crossing";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Koza)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Wolk)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Kapusta)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbGoat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbWolf)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbCabbage)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceTwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceThree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPlaceOne)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbShuttle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -295,20 +297,20 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txttime;
-        private System.Windows.Forms.PictureBox Koza;
-        private System.Windows.Forms.PictureBox Wolk;
-        private System.Windows.Forms.PictureBox Kapusta;
+        private System.Windows.Forms.PictureBox pbGoat;
+        private System.Windows.Forms.PictureBox pbWolf;
+        private System.Windows.Forms.PictureBox pbCabbage;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.PictureBox pbPlaceTwo;
+        private System.Windows.Forms.PictureBox pbPlaceThree;
+        private System.Windows.Forms.PictureBox pbPlaceOne;
+        private System.Windows.Forms.PictureBox pbShuttle;
+        private System.Windows.Forms.Button btnFinish;
+        private System.Windows.Forms.Button btnStart;
         private System.Windows.Forms.Timer timer2;
     }
 }

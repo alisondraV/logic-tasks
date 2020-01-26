@@ -29,39 +29,39 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Last));
-            this.name = new System.Windows.Forms.Label();
+            this.lblName = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.bal = new System.Windows.Forms.Label();
+            this.lblPoints = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.klas = new System.Windows.Forms.Label();
+            this.lblLevel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // name
+            // lblName
             // 
-            this.name.AutoSize = true;
-            this.name.BackColor = System.Drawing.Color.Transparent;
-            this.name.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.name.Location = new System.Drawing.Point(512, 24);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(34, 37);
-            this.name.TabIndex = 0;
-            this.name.Text = "_";
+            this.lblName.AutoSize = true;
+            this.lblName.BackColor = System.Drawing.Color.Transparent;
+            this.lblName.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblName.Location = new System.Drawing.Point(512, 24);
+            this.lblName.Name = "lblName";
+            this.lblName.Size = new System.Drawing.Size(34, 37);
+            this.lblName.TabIndex = 0;
+            this.lblName.Text = "_";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(489, 141);
+            this.label1.Location = new System.Drawing.Point(539, 143);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(311, 37);
+            this.label1.Size = new System.Drawing.Size(172, 37);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Результат тестування";
+            this.label1.Text = "Test results:";
             // 
             // label2
             // 
@@ -70,31 +70,31 @@
             this.label2.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(408, 197);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 37);
+            this.label2.Size = new System.Drawing.Size(231, 37);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Ви набрали";
+            this.label2.Text = "You have scored";
             // 
-            // bal
+            // lblPoints
             // 
-            this.bal.AutoSize = true;
-            this.bal.BackColor = System.Drawing.Color.Transparent;
-            this.bal.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.bal.Location = new System.Drawing.Point(587, 197);
-            this.bal.Name = "bal";
-            this.bal.Size = new System.Drawing.Size(34, 37);
-            this.bal.TabIndex = 3;
-            this.bal.Text = "_";
+            this.lblPoints.AutoSize = true;
+            this.lblPoints.BackColor = System.Drawing.Color.Transparent;
+            this.lblPoints.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPoints.Location = new System.Drawing.Point(632, 197);
+            this.lblPoints.Name = "lblPoints";
+            this.lblPoints.Size = new System.Drawing.Size(34, 37);
+            this.lblPoints.TabIndex = 3;
+            this.lblPoints.Text = "_";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(592, 197);
+            this.label4.Location = new System.Drawing.Point(661, 197);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(313, 37);
+            this.label4.Size = new System.Drawing.Size(221, 37);
             this.label4.TabIndex = 4;
-            this.label4.Text = "балів із 75 можливих";
+            this.label4.Text = "points out of 75";
             // 
             // pictureBox1
             // 
@@ -119,16 +119,16 @@
             this.pictureBox2.TabIndex = 30;
             this.pictureBox2.TabStop = false;
             // 
-            // klas
+            // lblLevel
             // 
-            this.klas.AutoSize = true;
-            this.klas.BackColor = System.Drawing.Color.Transparent;
-            this.klas.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.klas.Location = new System.Drawing.Point(587, 84);
-            this.klas.Name = "klas";
-            this.klas.Size = new System.Drawing.Size(34, 37);
-            this.klas.TabIndex = 32;
-            this.klas.Text = "_";
+            this.lblLevel.AutoSize = true;
+            this.lblLevel.BackColor = System.Drawing.Color.Transparent;
+            this.lblLevel.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLevel.Location = new System.Drawing.Point(587, 84);
+            this.lblLevel.Name = "lblLevel";
+            this.lblLevel.Size = new System.Drawing.Size(34, 37);
+            this.lblLevel.TabIndex = 32;
+            this.lblLevel.Text = "_";
             // 
             // Last
             // 
@@ -136,13 +136,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(1228, 644);
-            this.Controls.Add(this.klas);
+            this.Controls.Add(this.lblLevel);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.bal);
+            this.Controls.Add(this.lblPoints);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.name);
+            this.Controls.Add(this.lblName);
             this.Controls.Add(this.pictureBox1);
             this.Font = new System.Drawing.Font("Times New Roman", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -150,7 +150,7 @@
             this.Margin = new System.Windows.Forms.Padding(6);
             this.Name = "Last";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Результати";
+            this.Text = "Results";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Last_FormClosing);
             this.Load += new System.EventHandler(this.Last_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -162,14 +162,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label name;
+        private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label bal;
+        private System.Windows.Forms.Label lblPoints;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label klas;
+        private System.Windows.Forms.Label lblLevel;
     }
 }
 

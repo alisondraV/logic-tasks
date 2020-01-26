@@ -118,8 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="label1.Text" xml:space="preserve">
-    <value>У кастрюлі налито 8 літрів води, також є порожні 3-х і 5-литрові сосуди. Треба отримати 4 літри води. Для здійснення переливання натисніть на сосуд, з якого бажаєте взяти воду, а потім - на той, до якого бажаєте перелити.
-</value>
+    <value>The pan is filled with 8 liters of water, and there are empty 3 and 5 liter vessels. You need to get 4 liters of water. To perform the transfusion, click on the vessel from which you want to take the water, and then on the one to which you want to pour it.</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>

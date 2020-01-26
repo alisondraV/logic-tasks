@@ -18,110 +18,80 @@ namespace Задачі
         {
             InitializeComponent();
         }
-        int t = 180, k = 0;
-        int tm, ts;
-        string[] slova_v_rtb = new string[10];
-        int cv;
-        int [] nom = new int[10];
-       
+        int time = 180;
+        int secondsLeave = 0;
+
+        int points = 0;
+        int timeMinutes;
+        int timeSeconds;
+        string[] wordsInRTB = new string[10];
+        int [] number = new int[10];
+        const int numberOfWords = 10;
+        bool exit = false;
+        int[] m = new int[10];
+
         Random rand = new Random();
+        string resultPath = Application.StartupPath + "\\Result.txt";
+        string wordsPath = Application.StartupPath + "\\Words\\2.txt";
+        string[] wordList;
 
-        int n, q;
-
-        string path = Application.StartupPath + "\\Result.txt";
-
-        public static int  vvrk(int n, RichTextBox richTextBox1)
+        public void AddWords(int n, RichTextBox rtbWords)
         {
-        Random rand = new Random();
             
-             n = rand.Next(6, 12);
-            char[,] a = new char[n, n];
-
-            for (int i = 0; i < n; i++)
-            {
-                for (int j = 0; j < n; j++)
-                {
-                    a[i, j] = (char)rand.Next(0x0430, 0x44F);
-
-                    if (a[i, j].Equals('э'))
-                        a[i, j] = 'є';
-                    if (a[i, j].Equals('ё'))
-                        a[i, j] = 'ї';
-                    if (a[i, j].Equals('и'))
-                        a[i, j] = 'і';
-                    if (a[i, j].Equals('ъ'))
-                        a[i, j] = 'а';
-                    if (a[i, j].Equals('ы'))
-                        a[i, j] = 'и';
-
-                    richTextBox1.AppendText(a[i, j].ToString());
-
-                }
-            }
-            return (n);
         }
+
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (t > 0)
+            if (time > 0)
             {
-                t--;
-                tm = t / 60;
-                ts = t % 60;
-                if (ts >= 10)
-                    txttime.Text = tm.ToString() + ":" + ts.ToString();
+                time--;
+                timeMinutes = time / 60;
+                timeSeconds = time % 60;
+                if (timeSeconds >= 10)
+                    txttime.Text = timeMinutes.ToString() + ":" + timeSeconds.ToString();
                 else
-                    txttime.Text = tm.ToString() + ":0" + ts.ToString();
+                    txttime.Text = timeMinutes.ToString() + ":0" + timeSeconds.ToString();
             }
-
             else
-            { txttime.Text = "Stop"; timer2.Start(); string appendText = "Оберіть картинку - " + k.ToString() + Environment.NewLine;
-                File.AppendAllText(path, appendText, Encoding.UTF8);
+            {
+                Stop();
             }
         }
 
-        private void richTextBox1_SelectionChanged(object sender, EventArgs e)
+        private void rbtWords_SelectionChanged(object sender, EventArgs e)
         {
             for (int i = 0; i < 10; i++)
             {
-                if (richTextBox1.SelectedText == slova_v_rtb[i])
+                if (rtbWords.SelectedText == wordsInRTB[i])
                 {
-                    richTextBox1.SelectionFont = new Font("Verdana", 18, FontStyle.Italic);
-                    k++;
+                    rtbWords.SelectionFont = new Font("Verdana", 18, FontStyle.Italic);
+                    points++;
                 }
             }
-            
         }
-        int ksec = 0;
+
         private void timer2_Tick(object sender, EventArgs e)
         {
-            ksec++;
-            if (ksec == 10)
+            secondsLeave++;
+            if (secondsLeave == 3)
             {
-                Choose ff = new Choose();
-                ff.Show();
+                Choose choose = new Choose();
+                choose.Show();
                 this.Close();
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btnStart_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            button4.Visible = false;
-            richTextBox1.Clear();
-            button3.Visible = true;
+            btnStart.Visible = false;
+            rtbWords.Clear();
+            btnFinish.Visible = true;
 
-            string[] slova = {"собака", "бантик", "болото", "акація", "вівчар",
-                "геймер", "джинса", "діяння", "долоня", "дорога", "зубець",
-                "істина", "камінь", "колесо", "квітка", "клімат", "місяць",
-                "палата", "патрон", "прадід", "сварка", "свічка", "силует", "трофей", "спосіб",
-            "яблуко", "частка"};
-
-            bool exit = false;
-            int q = 10;
-            int[] m = new int[10];
-            for (int i = 0; i < q; i++)
+            wordList = File.ReadAllLines(wordsPath);
+            for (int i = 0; i < numberOfWords; i++)
             {
-                int p = rand.Next(slova.Length);
+                int p = rand.Next(wordList.Length);
 
                 if (i > 0)
                 {
@@ -134,7 +104,7 @@ namespace Задачі
                 }
                 if (exit == false)
                 {
-                    slova_v_rtb[i] = slova[p];
+                    wordsInRTB[i] = wordList[p];
                     m[i] = p;
                 }
                 else
@@ -142,51 +112,47 @@ namespace Задачі
                     exit = false;
                     i--;
                 }
-
             }
 
-            cv = n * n - 6;
-
-            for (int s = 0; s < q; s++)
+            for (int i = 0; i < numberOfWords; i++)
             {
-                if (s == 0)
+                int randLetters = rand.Next(70, 80);
+                for (int j = 0; j < randLetters; j++)
                 {
-                    vvrk(n, richTextBox1);
+                    int a = rand.Next(0, 26);
+                    char ch = (char)('a' + a);
+                    rtbWords.AppendText(ch.ToString());
                 }
-                else { vvrk(n, richTextBox1); }
 
-                richTextBox1.AppendText(slova_v_rtb[s]);
-                string str = richTextBox1.Text;
-                for (int p = 0; p < 10; p++)
+                rtbWords.AppendText(wordsInRTB[i]);
+                string str = rtbWords.Text;
+                for (int j = 0; j < 10; j++)
                 {
-                    if (str.Contains(slova_v_rtb[p]))
-                        nom[p] = str.IndexOf(slova_v_rtb[p]);
+                    if (str.Contains(wordsInRTB[j]))
+                        number[j] = str.IndexOf(wordsInRTB[j]);
                 }
-                richTextBox1.AppendText("пфрлрщдшорвдіраушцщгоажфпм");
-
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnFinish_Click(object sender, EventArgs e)
+        {
+            Stop();
+        }
+
+        void Stop()
         {
             timer1.Stop();
+            string appendText = $"Words - {points.ToString()}\n";
+            File.AppendAllText(resultPath, appendText);
+            Main.points += points;
             timer2.Start();
-            q = 10;
-            string appendText = "Увага - " + k.ToString() + Environment.NewLine;
-            File.AppendAllText(path, appendText, Encoding.UTF8);
-            Main.points += k;
-            for (int s = 0; s < q; s++)
+
+            for (int i = 0; i < numberOfWords; i++)
             {
-                richTextBox1.Select(nom[s], slova_v_rtb[s].Length);
-                richTextBox1.SelectionColor = Color.Red;
+                rtbWords.Select(number[i], wordsInRTB[i].Length);
+                rtbWords.SelectionColor = Color.Red;
             }
         }
-
-        
     }
-
-
-
-
 }
 
